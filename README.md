@@ -10,15 +10,15 @@
 
 ## ✨ About ChoomCore Tweaks
 
-ChoomCore Tweaks is a highly specialized collection of PowerShell scripts designed to give you **total control** over your Windows installation. The project focuses on three core pillars: **extreme performance optimization**, **data privacy**, and **aggressive bloatware removal**.
+ChoomCore Tweaks is a highly specialized collection of PowerShell scripts, now featuring a **Graphical User Interface (GUI)**. The project focuses on three core pillars: **extreme performance optimization**, **data privacy**, and **aggressive bloatware removal**.
 
 ---
 
 > [!WARNING]
 > **USE AT YOUR OWN RISK**
-> 
-> This script performs deep modifications to the Windows Registry, services, and scheduled tasks.
-> 
+> 
+> This program performs deep modifications to the Windows Registry, services, and scheduled tasks.
+> 
 > * **It is NOT recommended for use on Notebooks/Laptops.** The aggressive nature of the tweaks **may disable essential services** like power management, Wi-Fi, Touchpad, and other specialized hardware drivers. Only use this on Desktop PCs.
 > * **Recommendation:** Always create a **System Restore Point** before running any system-modifying script.
 
@@ -50,16 +50,27 @@ This collection of tweaks focuses on aggressive optimization and security.
 
 ---
 
-## 🛠️ How to Run the Tweaks
+## 🛠️ How to Run the Program
 
 > [!IMPORTANT]
 > **YOU MUST RUN AS ADMINISTRATOR**
-> 
-> This script requires elevated privileges to modify system services and the registry. Always use the included **`RUN_ChoomCore.cmd`** file.
+> 
+> The program requires elevated privileges to modify system settings.
 
-1.  **Download:** Download the two main files: `ChoomCore_Tweaks.ps1` and **`RUN_ChoomCore.cmd`**.
-2.  **Execute:** Double-click **`RUN_ChoomCore.cmd`** to start the process.
-3.  **Confirm:** Accept the User Account Control (UAC) prompt to allow the script to run as Administrator.
+### Option 1: Run the Compiled Program (.exe)
+
+This is the easiest option for the end-user.
+
+1.  Go to the **Releases** section of this repository.
+2.  Download the **`ChoomCore_GUI_EN_Complete.exe`** file.
+3.  Execute the **`.exe`** file as Administrator (right-click > Run as administrator).
+
+### Option 2: Run via Source Code (.ps1)
+
+If you prefer to inspect the source code before running:
+
+1.  Download the source file **`ChoomCore_GUI_EN_Complete.ps1`** and the **`RUN_ChoomCore.cmd`**.
+2.  **Double-click `RUN_ChoomCore.cmd`** to launch the GUI.
 
 > [!NOTE]
 > The `RUN_ChoomCore.cmd` uses the `-ExecutionPolicy Bypass` flag. This allows the script to run locally without changing your system's global security policies.
@@ -68,7 +79,16 @@ This collection of tweaks focuses on aggressive optimization and security.
 
 ## 🤝 Contribution & License
 
-Contributions and community feedback are encouraged to help improve this project. Please use the appropriate channel below:
+### Attribution
+
+This project was significantly improved with the addition of the Graphical User Interface.
+
+* **GUI Wrapper Development:** **LexBoosT**
+* **Original Tweak Logic (Core):** [ChoomCore]
+
+### License
+
+Contributions and community feedback are encouraged to help improve this project.
 
 * Report bugs or missing optimizations by opening a new **Issue**.
 * Submit code improvements via a **Pull Request**.
